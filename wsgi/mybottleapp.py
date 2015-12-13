@@ -11,7 +11,7 @@ app.install(plugin)
 
 
 
-database = plugin
+db = plugin
 #aaa = Cork(backend=mb, email_sender=config.email_sender, smtp_url=config.smtp_url)
 
 
