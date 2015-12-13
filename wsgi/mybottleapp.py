@@ -1,7 +1,7 @@
 from bottle import route, default_app
 import bottle
 from cork import Cork, AAAException
-import bottle-pgsql
+import bottle_pgsql
 
 
 app = bottle.Bottle()
