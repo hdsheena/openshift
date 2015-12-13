@@ -1,6 +1,6 @@
 from bottle import route, default_app
 import bottle
-from cork import Cork, AAAException
+#from cork import Cork, AAAException
 import bottle_pgsql
 
 
@@ -12,7 +12,7 @@ app.install(plugin)
 
 
 database = plugin
-aaa = Cork(backend=mb, email_sender=config.email_sender, smtp_url=config.smtp_url)
+#aaa = Cork(backend=mb, email_sender=config.email_sender, smtp_url=config.smtp_url)
 
 
 @route('/name/<name>')
