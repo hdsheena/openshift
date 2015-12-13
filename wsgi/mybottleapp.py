@@ -29,7 +29,7 @@ def show(item, db):
     db.execute('SELECT * from test where id="%s"', (item,))
     row = db.fetchone()
     if row:
-        return template(str(row))
+        return row
     return HTTPError(404, "Entity not found")
 
 
