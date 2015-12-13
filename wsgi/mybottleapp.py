@@ -26,7 +26,7 @@ def index():
 
 @app.route('/show/:item')
 def show(item, db):
-    db.execute('SELECT * from items where name="%s"', (item,))
+    db.execute('SELECT * from test where id="%s"', (item,))
     row = db.fetchone()
     if row:
         return template('showitem', page=row)
