@@ -30,7 +30,8 @@ def show(item, db):
     row = db.fetchone()
     if row:
         return row
-    return HTTPError(404, "Entity not found")
+    else:
+	    return HTTPError(404, "Entity not found")
 
 
 # This must be added in order to do correct path lookups for the views
