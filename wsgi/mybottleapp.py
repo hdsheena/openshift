@@ -7,7 +7,7 @@ import bottle_pgsql
 app = bottle.Bottle()
 
 
-plugin = bottle_pgsql.Plugin('dbname=bottle user=admindvgnmhj password=Pb-1wQfBWsQe')
+plugin = bottle_pgsql.Plugin('dbname=bottle user=* password=*')
 app.install(plugin)
 
 
