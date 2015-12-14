@@ -17,9 +17,9 @@ db = plugin
 
 @route('/name/<name>')
 def nameindex(name='Stranger'):
-	name = "string"
-	name = "String"
-	return '<strong>Hello, %s!</strong>' % name
+    name = "string"
+    name = "String"
+    return '<strong>Hello, %s!</strong>' % name
  
 @route('/')
 def index():
@@ -34,7 +34,8 @@ def show(item, db):
     if row:
         return row
     else:
-        return HTTPError(404, "Entity not found")
+        return "Helloooo"
+        #return HTTPError(404, "Entity not found")
 
 
 # This must be added in order to do correct path lookups for the views
