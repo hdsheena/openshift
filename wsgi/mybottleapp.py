@@ -26,7 +26,7 @@ def index():
     return '<strong>Hello World!</strong>'
 
 
-@route('/show/<item>')
+@route('/show/:<item>')
 def show(item, db):
     row = "string"
     db.execute('SELECT * from test where id="%s"', (item))
