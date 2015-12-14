@@ -26,7 +26,7 @@ def index():
 
 @app.route('/show/:item')
 def show(item, db):
-	row = "string"
+    row = "string"
     db.execute('SELECT * from test where id="%s"', (item,))
     row = db.fetchone()
     if row:
