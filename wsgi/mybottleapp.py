@@ -26,7 +26,7 @@ def nameindex(name='Stranger'):
     return '<strong>Hello, %s!</strong>' % name
  
 @route('/')
-def index():
+def index(db):
     return '<strong>Hello World!</strong>'
 
 
