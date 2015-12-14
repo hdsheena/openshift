@@ -17,6 +17,7 @@ db = plugin
 
 @route('/name/<name>')
 def nameindex(name='Stranger'):
+	name = "string"
     return '<strong>Hello, %s!</strong>' % name
  
 @route('/')
