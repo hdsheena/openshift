@@ -26,10 +26,10 @@ def index():
     return '<strong>Hello World!</strong>'
 
 
-@app.route('/show/<item>')
+@route('/show/<item>')
 def show(item, db):
     row = "string"
-    db.execute('SELECT * from test where id="%s"', (item,))
+    db.execute('SELECT * from test where id="%s"', (item))
     row = db.fetchone()
     if row:
         return row
