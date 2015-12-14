@@ -5,13 +5,13 @@ import bottle_pgsql
 
 
 app = bottle.Bottle()
+
+app.install(plugin)
 plugin = bottle_pgsql.Plugin('dbname=bottle user=admindvgnmhj password=Pb-1wQfBWsQe')
 print plugin
-print plugin.execute('select * from test')
+print plugin.apply.execute('select * from test')
 
-print plugin.execute('select * from test').next()
-app.install(plugin)
-
+print plugin.apply.execute('select * from test').next()
 
 
 #db = plugin
