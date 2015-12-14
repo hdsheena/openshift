@@ -9,10 +9,6 @@ app = bottle.Bottle()
 
 plugin = bottle_pgsql.Plugin('dbname=bottle user=admindvgnmhj password=Pb-1wQfBWsQe')
 app.install(plugin)
-print plugin
-print db.execute('select * from test')
-
-print plugin.apply.execute('select * from test').next()
 
 
 #db = plugin
